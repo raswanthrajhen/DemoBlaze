@@ -10,8 +10,7 @@
         <methods>
           <include name="teardown"/>
           <include name="openwindow"/>
-          <include name="logIn"/>
-          <include name="singIn" invocation-numbers="1 2"/>
+          <include name="singIn" invocation-numbers="0"/>
         </methods>
       </class> <!-- org.demo.test.TC001Home -->
     </classes>

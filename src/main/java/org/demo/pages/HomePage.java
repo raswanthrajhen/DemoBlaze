@@ -19,29 +19,41 @@ public class HomePage extends DemoBase{
 	
 	public HomePage singIn(String userName,String password) {
 		try {
-			Thread.sleep(6000);
+		
+		//thread.sleep is for to avoid the random popUp
+		Thread.sleep(6000);
+		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));	
 		By siginButtonLocator = By.id("signin2");
 		WebElement locatorSigIn = wait.until(ExpectedConditions.visibilityOfElementLocated(siginButtonLocator));
 		wait.until(ExpectedConditions.elementToBeClickable(locatorSigIn));
-		locatorSigIn.click();
+		click(locatorSigIn);
 		
-		System.out.println("home page");
-		System.out.println(userName+" " +password);
+		//Assert checking in singInPage
+		 WebElement userNameAssertField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@for='sign-username']")));
+		 boolean userNameAssert=userNameAssertField.isDisplayed();
 		
-		  WebElement usernameField = driver.findElement(By.xpath("//input[@id='sign-username']"));
-          WebElement passwordField = driver.findElement(By.xpath("//input[@id='sign-password']"));
-
+		 WebElement passwordAssertField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@for='sign-password']")));
+		 boolean passwordAssert=passwordAssertField.isDisplayed();
+		
+		 checkAssert(userNameAssert,"singInPage");
+		 checkAssert(passwordAssert,"singInPage");
+		 
+		 //Find the element for the userName and password textBox 
+		 WebElement usernameField = driver.findElement(By.xpath("//input[@id='sign-username']"));
+         WebElement passwordField = driver.findElement(By.xpath("//input[@id='sign-password']"));
+         
           usernameField.clear();
           passwordField.clear();
           WebElement locatorusernameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='sign-username']")));
           locatorusernameField.sendKeys(userName);
           WebElement locatorpasswordField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='sign-password']")));
           locatorpasswordField.sendKeys(password);
-		click(driver.findElement(By.xpath("//button[normalize-space()='Sign up']")));
+		  click(driver.findElement(By.xpath("//button[normalize-space()='Sign up']")));
 		
-        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-	    alert.accept();
+		  //Accept the sigIn Done Alert
+          Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+	      alert.accept();
 		
 		
 		}
@@ -52,17 +64,33 @@ public class HomePage extends DemoBase{
 		return this;
 	}
 	
+
+
 	public void login(String userName,String password) throws InterruptedException {
 		try {
+			
+			//thread.sleep is  To avoid the random popUp
 			Thread.sleep(6000);
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		
 			By loginButtonLocator = By.xpath("//a[@data-target='#logInModal']");
 			
+			//Enter into loginpage
 			WebElement locatorLogin = wait.until(ExpectedConditions.visibilityOfElementLocated(loginButtonLocator));
 			wait.until(ExpectedConditions.elementToBeClickable(locatorLogin));
 			locatorLogin.click();
 			
+			
+			//Assert checking in logInPage
+			 WebElement userNameAssertField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@for='log-name']")));
+			 boolean userNameAssert=userNameAssertField.isDisplayed();
+			
+			 WebElement passwordAssertField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@for='log-pass'][normalize-space()='Password:']")));
+			 boolean passwordAssert=passwordAssertField.isDisplayed();
+			
+			 checkAssert(userNameAssert,"logInPage");
+			 checkAssert(passwordAssert,"logInPage");
+			 
 			WebElement locatorUser=driver.findElement(By.xpath("//input[@id='loginusername']"));
 			wait.until(ExpectedConditions.elementToBeClickable(locatorUser));
 			locatorUser.sendKeys(userName);

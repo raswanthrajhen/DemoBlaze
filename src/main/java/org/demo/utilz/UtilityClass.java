@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class UtilityClass {
 	
@@ -74,6 +74,14 @@ public class UtilityClass {
 	}
 	
 
+	public void checkAssert(boolean assertValue,String pageName) {
+		try {
+		Assert.assertEquals(true, assertValue);
+		}
+		catch(Exception ex) {
+			 System.out.println("The assert vale chane in "+ pageName);
+		}
+	}
 	
 	public void quitBrowser() {
 		driver.quit();
@@ -81,9 +89,6 @@ public class UtilityClass {
 	
 	public void click(WebElement elements) {
 	
-		
-		
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	        int attempts = 0;
 	        while (attempts < 3) {
 	            try {

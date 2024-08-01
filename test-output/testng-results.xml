@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-01T17:24:21 IST" name="Suite" finished-at="2024-08-01T17:26:12 IST" duration-ms="110975">
+  <suite started-at="2024-08-01T20:26:42 IST" name="Suite" finished-at="2024-08-01T20:27:21 IST" duration-ms="39475">
     <groups>
     </groups>
-    <test started-at="2024-08-01T17:24:21 IST" name="Test" finished-at="2024-08-01T17:26:12 IST" duration-ms="110975">
+    <test started-at="2024-08-01T20:26:42 IST" name="Test" finished-at="2024-08-01T20:27:21 IST" duration-ms="39475">
       <class name="org.demo.test.TC001Home">
-        <test-method is-config="true" signature="openwindow(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.demo.test.TC001Home@6fdbe764]" started-at="2024-08-01T17:24:21 IST" name="openwindow" finished-at="2024-08-01T17:24:27 IST" duration-ms="6223" status="PASS">
+        <test-method is-config="true" signature="openwindow(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.demo.test.TC001Home@51c668e3]" started-at="2024-08-01T20:26:42 IST" name="openwindow" finished-at="2024-08-01T20:26:47 IST" duration-ms="4769" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,46 +28,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openwindow -->
-        <test-method signature="singIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home@6fdbe764]" started-at="2024-08-01T17:24:28 IST" name="singIn" data-provider="getData" finished-at="2024-08-01T17:25:05 IST" duration-ms="36843" status="PASS">
+        <test-method signature="singIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home@51c668e3]" started-at="2024-08-01T20:26:47 IST" name="singIn" data-provider="getData" finished-at="2024-08-01T20:26:55 IST" duration-ms="8198" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@7f6874f2]]>
+                <![CDATA[[Ljava.lang.String;@5f14761c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singIn -->
-        <test-method signature="singIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home@6fdbe764]" started-at="2024-08-01T17:25:05 IST" name="singIn" data-provider="getData" finished-at="2024-08-01T17:25:42 IST" duration-ms="36721" status="PASS">
+        <test-method signature="singIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home@51c668e3]" started-at="2024-08-01T20:26:55 IST" name="singIn" data-provider="getData" finished-at="2024-08-01T20:27:04 IST" duration-ms="8250" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@2a367e93]]>
+                <![CDATA[[Ljava.lang.String;@33feb805]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singIn -->
-        <test-method signature="singIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home@6fdbe764]" started-at="2024-08-01T17:25:42 IST" name="singIn" data-provider="getData" finished-at="2024-08-01T17:25:48 IST" duration-ms="6037" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@70211df5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- singIn -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:org.demo.test.TC001Home@6fdbe764]" started-at="2024-08-01T17:25:48 IST" name="teardown" finished-at="2024-08-01T17:25:48 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.demo.test.TC001Home@51c668e3]" started-at="2024-08-01T20:27:04 IST" name="teardown" finished-at="2024-08-01T20:27:04 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- org.demo.test.TC001Home -->
       <class name="org.demo.test.TC001Home2">
-        <test-method is-config="true" signature="openwindow(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.demo.test.TC001Home2@5824a83d]" started-at="2024-08-01T17:25:48 IST" name="openwindow" finished-at="2024-08-01T17:25:50 IST" duration-ms="2296" status="PASS">
+        <test-method is-config="true" signature="openwindow(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.demo.test.TC001Home2@537f60bf]" started-at="2024-08-01T20:27:04 IST" name="openwindow" finished-at="2024-08-01T20:27:07 IST" duration-ms="2791" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,40 +77,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openwindow -->
-        <test-method signature="logIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home2@5824a83d]" started-at="2024-08-01T17:25:50 IST" name="logIn" data-provider="getData" finished-at="2024-08-01T17:25:57 IST" duration-ms="7029" status="PASS">
+        <test-method signature="logIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home2@537f60bf]" started-at="2024-08-01T20:27:07 IST" name="logIn" data-provider="getData" finished-at="2024-08-01T20:27:14 IST" duration-ms="7167" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@1a6dc589]]>
+                <![CDATA[[Ljava.lang.String;@71f1cc02]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method signature="logIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home2@5824a83d]" started-at="2024-08-01T17:25:57 IST" name="logIn" data-provider="getData" finished-at="2024-08-01T17:26:05 IST" duration-ms="7182" status="PASS">
+        <test-method signature="logIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home2@537f60bf]" started-at="2024-08-01T20:27:14 IST" name="logIn" data-provider="getData" finished-at="2024-08-01T20:27:21 IST" duration-ms="6971" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@697a34af]]>
+                <![CDATA[[Ljava.lang.String;@692dba54]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method signature="logIn([Ljava.lang.String;)[pri:0, instance:org.demo.test.TC001Home2@5824a83d]" started-at="2024-08-01T17:26:05 IST" name="logIn" data-provider="getData" finished-at="2024-08-01T17:26:12 IST" duration-ms="7182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@48976e6d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:org.demo.test.TC001Home2@5824a83d]" started-at="2024-08-01T17:26:12 IST" name="teardown" finished-at="2024-08-01T17:26:12 IST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.demo.test.TC001Home2@537f60bf]" started-at="2024-08-01T20:27:21 IST" name="teardown" finished-at="2024-08-01T20:27:21 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
